@@ -1,4 +1,3 @@
-var wtfnode = require('wtfnode');
 import mocha = require('mocha');
 import jsonSerializersMiddleware = require('../index');
 import express = require('express');
