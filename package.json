@@ -1,6 +1,6 @@
 {
   "name": "json-serializers-express-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware for json-serializers",
   "main": "dist/index.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "types": "./index.d.ts",
   "author": "",
   "license": "MIT",
+  "peerDependencies": {
+    "json-serializers": "~1.0"
+  },
   "devDependencies": {
     "@types/express": "^4.0.33",
     "@types/mocha": "^2.2.32",
