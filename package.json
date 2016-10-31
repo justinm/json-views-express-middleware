@@ -1,6 +1,6 @@
 {
   "name": "json-serializers-express-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Express middleware for json-serializers",
   "main": "dist/index.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "license": "MIT",
   "peerDependencies": {
     "json-serializers": "~1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinm/json-serializers-express-middleware.git"
   },
   "devDependencies": {
     "@types/express": "^4.0.33",
