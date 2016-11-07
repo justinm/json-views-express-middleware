@@ -1,11 +1,11 @@
-json-serializers-express-middleware
+json-views-express-middleware
 ===================================
 
 Easily send objects in express responses using JSON views.
 
-[![Build Status](https://travis-ci.org/justinm/json-serializers-express-middleware.svg?branch=develop)](https://travis-ci.org/justinm/json-serializers-express-middleware)
-  [![Code Climate](https://codeclimate.com/github/justinm/json-serializers-express-middleware/badges/gpa.svg)](https://codeclimate.com/github/justinm/json-serializers-express-middleware)
-  [![Test Coverage](https://codeclimate.com/github/justinm/json-serializers-express-middleware/badges/coverage.svg)](https://codeclimate.com/github/justinm/json-serializers-express-middleware/coverage)
+[![Build Status](https://travis-ci.org/justinm/json-views-express-middleware.svg?branch=develop)](https://travis-ci.org/justinm/json-views-express-middleware)
+  [![Code Climate](https://codeclimate.com/github/justinm/json-views-express-middleware/badges/gpa.svg)](https://codeclimate.com/github/justinm/json-views-express-middleware)
+  [![Test Coverage](https://codeclimate.com/github/justinm/json-views-express-middleware/badges/coverage.svg)](https://codeclimate.com/github/justinm/json-views-express-middleware/coverage)
   
 Example
 -------
@@ -13,14 +13,14 @@ Example
 ```javascript
 
 var express = require('express');
-var serializer = require('json-serializers');
-var serializerMiddleware = require('json-serializers-express-middleware');
+var views = require('json-views');
+var viewsMiddleware = require('json-views-express-middleware');
 
 var app = express();
-app.use(serializerMiddleware.middleware(serializer));
+app.use(viewsMiddleware.middleware(views));
 
 app.get('/', function(req, res, next) {
-  res.serialize('test', {});  
+  res.view('test', {});  
 });
 
 ```

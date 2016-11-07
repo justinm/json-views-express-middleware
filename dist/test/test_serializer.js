@@ -1,6 +1,0 @@
-"use strict";
-const serializer = require('json-serializers');
-serializer.describe('test', function () {
-    this.allow('test');
-});
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdF9zZXJpYWxpemVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vdGVzdC90ZXN0X3NlcmlhbGl6ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE1BQU8sVUFBVSxXQUFXLGtCQUFrQixDQUFDLENBQUM7QUFFaEQsVUFBVSxDQUFDLFFBQVEsQ0FBQyxNQUFNLEVBQUU7SUFFMUIsSUFBSSxDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQztBQUVyQixDQUFDLENBQUMsQ0FBQyJ9

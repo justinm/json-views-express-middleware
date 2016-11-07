@@ -1,7 +1,7 @@
 {
-  "name": "json-serializers-express-middleware",
+  "name": "json-views-express-middleware",
   "version": "1.0.2",
-  "description": "Express middleware for json-serializers",
+  "description": "Express middleware for json-views",
   "main": "dist/index.js",
   "scripts": {
     "test": "gulp test"
@@ -9,12 +9,9 @@
   "types": "./index.d.ts",
   "author": "",
   "license": "MIT",
-  "peerDependencies": {
-    "json-serializers": "~1.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinm/json-serializers-express-middleware.git"
+    "url": "https://github.com/justinm/json-views-express-middleware.git"
   },
   "devDependencies": {
     "@types/express": "^4.0.33",
@@ -27,7 +24,7 @@
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "gulp-typescript": "^3.1.2",
-    "json-serializers": "^1.0.1",
+    "json-views": "^1.0.3",
     "mocha": "^3.1.2",
     "request": "^2.76.0",
     "should": "^11.1.1",

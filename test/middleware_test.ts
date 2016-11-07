@@ -1,14 +1,14 @@
 import mocha = require('mocha');
-import jsonSerializersMiddleware = require('../index');
+import jsonViewsMiddleware = require('../index');
 import express = require('express');
-import serializer = require('json-serializers');
+import view = require('json-views');
 import sinon = require('sinon');
 import request = require('request');
 import http = require('http');
-require('./test_serializer');
+require('./test_view');
 require('should');
 
-describe('json-serializers-middleware', () => {
+describe('json-views-middleware', () => {
 
   var test = {
     test: true,
@@ -19,13 +19,13 @@ describe('json-serializers-middleware', () => {
     var app: express.Express = express();
     var server: http.Server;
 
-    app.use(jsonSerializersMiddleware.middleware(serializer));
+    app.use(jsonViewsMiddleware.middleware(view));
 
     app.get('/', (req, res, next) => {
       try {
-        res.should.have.property('serialize');
+        res.should.have.property('view');
 
-        res.serialize('test', test);
+        res.view('test', test);
         server.close();
       } catch(e) {
         done(e);

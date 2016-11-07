@@ -1,11 +1,11 @@
 /// <reference path="./index.d.ts" />
 import express = require('express');
-import jsonSerializers = require('json-serializers');
+import views = require('json-views');
 
-export function middleware(serializer: jsonSerializers.JsonSerializersStatic) {
+export function middleware(view: views.JsonViewsStatic) {
   return function(req: express.Request, res: express.Response, next: (err: any) => void) {
-    res.serialize = function (descriptorName: string, data: any) {
-      res.send(serializer.serialize(descriptorName, data));
+    res.view = function (descriptorName: string, data: any) {
+      res.send(view.view(descriptorName, data));
     };
     next(null);
   };
