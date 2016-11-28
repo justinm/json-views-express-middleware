@@ -1,6 +1,6 @@
 {
   "name": "json-views-express-middleware",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Express middleware for json-views",
   "main": "dist/index.js",
   "scripts": {
